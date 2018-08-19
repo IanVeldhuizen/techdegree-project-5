@@ -1,0 +1,35 @@
+
+
+%block {
+    display: block;
+}
+
+%grid-system {
+    width: 100%;
+    border-radius: $border-rad;
+    border: 0;
+    padding: 12px;
+    color: $grey;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+%btn {
+    width: 100%;
+    border-radius: $border-rad;
+    border: 0;
+    padding: 12px;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+%nav {
+    text-align: center;
+    margin-top: 2px;
+    padding: 15px 0;
+    font-size: 18px;
+}

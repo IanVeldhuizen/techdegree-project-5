@@ -1,0 +1,20 @@
+
+
+
+.img--logo {
+    @extend %block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  
+  .img--avatar {
+    @extend %block;
+    margin: 30px auto;
+  }
+  
+  .img--frame {
+    @extend %block;
+    width: 100%;
+    border: 1px solid lighten($grey, 40%);
+    padding: 10px;
+  }

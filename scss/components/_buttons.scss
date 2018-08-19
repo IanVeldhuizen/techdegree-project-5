@@ -1,0 +1,42 @@
+
+
+.btn--default {
+    @extend %btn;
+    background-color: $color-primary;
+  }
+  
+  .btn--default:hover {
+    background-color: lighten( $color-primary, 10% );
+  }
+  
+  .btn--success {
+    @extend %btn;
+    background-color: $color-success;
+  }
+  .btn--success:hover {
+    background-color: lighten( $color-success, 10% );
+  }
+  
+  .btn--error {
+    @extend %btn;
+    background-color: $color-error;
+  }
+  .btn--error:hover {
+    background-color: lighten( $color-error, 10% );
+  }
+  
+  .btn--warning {
+    @extend %btn;
+    background-color: $color-warning;
+  }
+  .btn--warning:hover {
+    background-color: lighten( $color-warning, 10% );
+  }
+  
+  .btn--info {
+    @extend %btn;
+    background-color: $color-info;
+  }
+  .btn--info:hover {
+    background-color: lighten( $color-info, 10% );
+  }
