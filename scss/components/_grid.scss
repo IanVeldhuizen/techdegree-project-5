@@ -20,42 +20,13 @@
         margin-top: 20px;
         font-size: 1.05em;
       }
-      
-      
-      .grid__col--12.theme__colors {
+
+      .theme__colors.grid__col-- {
         @extend %grid-system;
-        background-color: $color-default;
+        @include bg-colors($bg-colors);
       }
       
-      .grid__col--6.theme__colors {
-        @extend %grid-system;
-        background-color: $color-col6;
-      }
       
-      .grid__col--4.theme__colors {
-        @extend %grid-system;
-        background-color: $color-col4;
-      }
-      
-      .grid__col--3.theme__colors {
-        @extend %grid-system;
-        background-color: $color-col3;
-      }
-      
-      .grid__col--5.theme__colors {
-        @extend %grid-system;
-        background-color: $color-col5;
-      }
-      
-      .grid__col--7.theme__colors {
-        @extend %grid-system;
-        background-color: $color-col7;
-      }
-      
-      .grid__col--8.theme__colors {
-        @extend %grid-system;
-        background-color: $color-col8;
-      }
 
 @include media {
   .container {
@@ -82,7 +53,6 @@
 
   .grid__col--12 {
     display: flex;
-    justify-content: space-between;
     width: 100%;
     padding: 0 10px;
   }
@@ -95,27 +65,12 @@
     flex-basis: 60%;
   }
 
-  .grid__col--12 .btn--default{
-    margin: 0 10px;
-  }
-
-  .grid__col--12 .btn--success{
-    margin: 0 10px;
-  }
-
-  .grid__col--12 .btn--error{
-    margin: 0 10px;
-  }
-
-  .grid__col--12 .btn--warning{
-    margin: 0 10px;
-  }
-
-  .grid__col--12 .btn--info{
-    margin: 0 10px;
+  .grid__col--12 {
+    .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+      margin: 0 10px;
+    }
   }
   
-
   .theme__colors {
     margin: 0 5px;
   }

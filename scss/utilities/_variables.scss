@@ -18,6 +18,21 @@ $color-col5: #88d9a0;
 $color-col7: #ec9fa3;
 $color-col8: #fd9f85;
 
+//Grid bg color map
+
+$bg-colors: (
+    3 : $color-col3,
+    4 : $color-col4,
+    5 : $color-col5,
+    6 : $color-col6,
+    7 : $color-col7,
+    8 : $color-col8,
+    12 : $color-col12,
+);
+
+
+
+
 //fonts
 
 $font-primary: "Helvetica Neue", Helvetica, Arial, sans-serif;
