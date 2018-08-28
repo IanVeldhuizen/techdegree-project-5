@@ -15,6 +15,7 @@
 @each $theme, $color in $map {
     @include m($theme) {
    background-color: $color;
+   text-align: center;
    @extend %grid-system;
     }
 }

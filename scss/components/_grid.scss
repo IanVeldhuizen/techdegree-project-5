@@ -21,11 +21,12 @@
       }
 
       .theme__colors.grid__col-- {
-        @extend %grid-system;
         @include bg-colors($bg-colors);
+        @extend %grid-system;
       }
       
       
+//  ===  Media Queries  ===
 
 @include media {
   .container {
@@ -37,6 +38,11 @@
     justify-content: space-around;
   }
 
+  .grid__col--12 {
+    display: flex;
+    width: 100%;
+    padding: 0 10px;
+  }
 
   .grid__col--12 {
     .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
@@ -46,5 +52,31 @@
   
   .theme__colors {
     margin: 0 5px;
+  }
+
+  .theme__colors {
+    justify-content: center;
+  }
+
+  .grid__col--8 {
+    flex-basis: 66%;
+  }
+
+  .grid__col--6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid__col--4 {
+    flex-basis: 33%;
+  }
+
+  .grid__col--5 {
+    flex-basis: 40%;
+  }
+
+  .grid__col--7 {
+    flex-basis: 60%;
   }
 }
