@@ -3,6 +3,7 @@
     .container {
   
         width: 85%;
+        max-width: 1400px;
         margin: 30px auto; 
         color: $grey;
         font-family: $font-primary;
@@ -29,9 +30,7 @@
 //  ===  Media Queries  ===
 
 @include media {
-  .container {
-    max-width: 1400px;
-  }
+
 
   .grid__row {
     display: flex;
